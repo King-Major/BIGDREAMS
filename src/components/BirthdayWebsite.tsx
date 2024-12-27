@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import one from '../images/one.jpg';
 import two from '../images/two.jpg';
@@ -13,12 +13,7 @@ import BirthdayHeroSection from './herosection'
 
 
 const GlossyBirthdayWebsite = () => {
-  const [countdown, setCountdown] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
-  });
+ 
   
   const celebrant = {
     name: "Mr. Emmanuel Bawa",
@@ -42,24 +37,7 @@ const GlossyBirthdayWebsite = () => {
     ]
   };
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     const birthDate = new Date(celebrant.birthdayDate);
-  //     const now = new Date();
-  //     const difference = birthDate.getTime() - now.getTime();
-
-  //     if (difference > 0) {
-  //       setCountdown({
-  //         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-  //         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-  //         minutes: Math.floor((difference / 1000 / 60) % 60),
-  //         seconds: Math.floor((difference / 1000) % 60)
-  //       });
-  //     }
-  //   }, 1000);
-
-  //   return () => clearInterval(timer);
-  // }, []);
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-blue-50 to-white">
