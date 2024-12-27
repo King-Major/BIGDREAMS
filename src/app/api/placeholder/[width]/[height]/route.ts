@@ -1,11 +1,10 @@
-import { type NextRequest } from 'next/server';
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 export async function GET(
-  _request: NextRequest,
-  context: { params: { width: string; height: string } }
+  request: Request,
+  { params }: any
 ) {
-  const { width, height } = context.params;
-  
-  // Construct the image URL and return Response directly instead of using NextResponse
-  return Response.redirect(`https://via.placeholder.com/${width}x${height}`);
+  return Response.redirect(
+    `https://via.placeholder.com/${params.width}x${params.height}`
+  );
 }
