@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import one from '../images/one.jpg';
 import two from '../images/two.jpg';
-import three from '../images/three.jpg';
+
 import Image from 'next/image';
 import four from '../images/five.jpg';
 import six from '../images/six.jpg'
